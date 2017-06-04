@@ -3,10 +3,9 @@ package project;
 import java.util.Scanner;
 
 public class CashRegister {
-
-	public static void main(String[] args) {
-		Scanner kb = new Scanner(System.in);
-
-	}
+	Scanner kb = new Scanner(System.in);
+	private int priceOfProduct, moneyProvided, change;
+	private int twenties, tens, fives, ones;
+	private double quarters, dimes, nickels, pennies;
 
 }
