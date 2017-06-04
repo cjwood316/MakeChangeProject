@@ -35,10 +35,16 @@ public class CashRegister {
 			if (tens > 0) {
 				change = change % 1000;
 				System.out.println(tens + " $10 bill(s)");
-
-			} else {
-
 			}
+			// Checks for remainder of fives *passed*
+			int fives = change / 500;
+			if (fives > 0) {
+				change = change % 500;
+				System.out.println(fives + " $5 bill(s)");
+			}
+
+		} else {
+
 		}
 	}
 }
