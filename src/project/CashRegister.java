@@ -20,6 +20,9 @@ public class CashRegister {
 		kb.close();
 
 		// Insert program logic to compare
+		if (moneyProvided == priceOfProduct) {
+			System.out.print("No change is necessary!");
+		}
 		if (moneyProvided > priceOfProduct) {
 			System.out.println("The change is: $" + ((moneyProvided - priceOfProduct) / 100));
 			System.out.println("The customer should be given the change as follows: ");
@@ -49,24 +52,25 @@ public class CashRegister {
 				System.out.println(ones + " $1 bill(s)");
 			}
 			double quarters = change / 25;
-			if (quarters > 0) {
+			if (quarters > 1) {
 				change = change % 25;
-				System.out.println((int) quarters + " quarter(s)");
+				System.out.println((int)quarters + " quarter(s)");
 			}
 			double dimes = change / 10;
-			if (dimes > 0) {
+			if (dimes > 1) {
 				change = change % 10;
 				System.out.println((int)dimes + " dime(s)");
 			}
 			double nickels = change / 5;
-			if (nickels > 0) {
+			if (nickels > 1) {
 				change = change % 5;
 				System.out.println((int)nickels + " nickel(s)");
 			}
 			double pennies = change;
-			System.out.println((int)pennies + " pennies");
+			System.out.println((int) pennies + " pennies");
 
-		} else {
+		} else if (moneyProvided < priceOfProduct) {
+			System.out.print("Error: not enough money paid, please try again.");
 
 		}
 	}
