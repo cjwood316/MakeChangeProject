@@ -29,6 +29,12 @@ public class CashRegister {
 			if (twenties > 0) {
 				change = change % 2000;
 				System.out.println(twenties + " $20 bill(s)");
+			}
+			// Second test checks for tens. *passed*
+			int tens = change / 1000;
+			if (tens > 0) {
+				change = change % 1000;
+				System.out.println(tens + " $10 bill(s)");
 
 			} else {
 
