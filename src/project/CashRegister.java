@@ -42,9 +42,16 @@ public class CashRegister {
 				change = change % 500;
 				System.out.println(fives + " $5 bill(s)");
 			}
+			// Checks for remainder of ones *passed*
+			int ones = change / 100;
+			if (ones > 0) {
+				change = change % 100;
+				System.out.println(ones + " $1 bill(s)");
+				// Divided by 100 to counter the multiplication of 100.
 
-		} else {
+			} else {
 
+			}
 		}
 	}
 }
