@@ -52,19 +52,19 @@ public class CashRegister {
 				System.out.println(ones + " $1 bill(s)");
 			}
 			double quarters = change / 25;
-			if (quarters > 1) {
+			if (quarters >= 1) {
 				change = change % 25;
-				System.out.println((int)quarters + " quarter(s)");
+				System.out.println((int) quarters + " quarter(s)");
 			}
 			double dimes = change / 10;
-			if (dimes > 1) {
+			if (dimes >= 1) {
 				change = change % 10;
-				System.out.println((int)dimes + " dime(s)");
+				System.out.println((int) dimes + " dime(s)");
 			}
 			double nickels = change / 5;
-			if (nickels > 1) {
+			if (nickels >= 1) {
 				change = change % 5;
-				System.out.println((int)nickels + " nickel(s)");
+				System.out.println((int) nickels + " nickel(s)");
 			}
 			double pennies = change;
 			System.out.println((int) pennies + " pennies");

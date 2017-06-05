@@ -1,4 +1,2 @@
 ## Jacob's Make Change Project
-This is my week 1 homework project.
-
-For this week's project
+This is my week 1 homework project, For this week's project we used own knowledge of Data types and casting to aid in printing out reasonable numbers for a change program. The key to finding the correct amount of change was using the Modulo(%) operator to get the remainder of the price of a product and the amount paid by a customer as taken from a user running the program. The program runs in a way in which it will find the largest bill/coin it can create starting at a $20 down to the lowest denomination at a penny and display the number of each denomination a customer should recieve at the point of sale.
